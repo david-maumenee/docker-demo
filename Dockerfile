@@ -27,5 +27,5 @@ COPY --from=ui /usr/src/app/ui/semantic/dist/semantic.min.js static/dist/semanti
 COPY --from=ui /usr/src/app/ui/semantic/dist/themes/default/assets static/dist/themes/default/
 COPY --from=app /go/src/app/docker-demo /bin/docker-demo
 COPY templates /templates
-EXPOSE 8080
+EXPOSE 80
 ENTRYPOINT ["/bin/docker-demo"]
