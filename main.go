@@ -60,7 +60,7 @@ func getHostname() string {
 func getVersion() string {
 	ver := os.Getenv("VERSION")
 	if ver == "" {
-		ver = "0.1"
+		ver = "1.0"
 	}
 
 	return ver
